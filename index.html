@@ -1,185 +1,193 @@
 <!DOCTYPE html>
 <html>
-<title>Félix Larose-Gervais</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-html,body,h1,h2,h3,h4,h5,h6 {font-family: "Palatino", sans-serif}
-.page-break-before, .page-break-after {
-  display: none;
-}
-@media print {
-  * {
-    background: transparent !important; color: black !important; text-shadow: none !important; filter:none !important; -ms-filter: none !important;
-    margin: 0px auto !important;
-  } /* Black prints faster: h5bp.com/s */
-  .page-break-after {
-    display: block;
-    page-break-after: always;
-  }
-  .page-break-before {
-    display: block;
-    page-break-before: always;
-  }
-  a, a:visited { text-decoration: underline; }
-  a[href]:after { content: " (" attr(href) ")"; }
-  abbr[title]:after { content: " (" attr(title) ")"; }
-  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }  /* Don't show links for images, or javascript/internal links */
-  pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
-  thead { display: table-header-group; } /* h5bp.com/t */
-  tr, img { page-break-inside: avoid; }
-  img { max-width: 100% !important; }
-  @page { margin: 0.5cm; }
-  p, h2, h3 { orphans: 3; widows: 3; }
-  h2, h3 { page-break-after: avoid; }
-  .w3-row-padding>.w3-third, .w3-row-padding>.w3-twothird {
-    padding: 0px;
-  }
-  .w3-card {
-    box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.16), 0 0px 0px 0 rgba(0, 0, 0, 0.12) !important;
-  }
-  .w3-margin-bottom {
-    margin: 0px !important;
-  }
-}
-</style>
+
+<head>
+    <title>Félix Larose-Gervais</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/w3.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            background-image: url("img/bg.jpg");
+        }
+
+        @media print {
+            .pfull {
+                padding: 0 !important;
+                margin: 0 !important;
+                box-shadow: none !important;
+            }
+
+            .phint {
+                display: block !important;
+            }
+
+            a,
+            a:visited {
+                text-decoration: underline;
+                display: block;
+            }
+
+            a[href]:after {
+                content: " ("attr(href) ")";
+            }
+
+            @page {
+                margin: 0.5cm;
+            }
+        }
+    </style>
+</head>
+
 <body class="w3-light-grey">
 
-<!-- Page Container -->
-<div class="w3-container w3-margin-top" style="max-width:1400px;">
+    <div class="w3-margin pfull">
 
-  <!-- The Grid -->
-  <div class="w3-cell-row">
+        <!-- first row, presentation and work-->
+        <div class="w3-cell-row w3-card pfull">
 
-    <!-- Left Column -->
-    <div class="w3-third w3-cell w3-container w3-mobile">
+            <!-- Left side, about me -->
+            <div class="w3-container w3-cell w3-white w3-mobile">
+                <div class="w3-center">
+                    <img src="avatar.jpg" style="padding: 2em; max-width: 20em" alt="Avatar">
+                    <h2>Félix Larose-Gervais</h2>
+                    <h5><b>a.k.a.</b> <i style="font-family: cursive">filedesless</i></h5>
+                </div>
+                <hr />
+                <div class="w3-container">
+                    <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-blue"></i>Dev</p>
+                    <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-blue"></i>Montréal</p>
+                    <p><i class="fa fa-envelope fa-fw w3-large w3-margin-right w3-text-blue"></i>filedesless@gmail.com
+                    </p>
+                </div>
+                <hr />
+                <div class="w3-container">
+                    <!-- <p>Skills/Interests</p> -->
+                    <p><i class="fa fa-shield w3-margin-right w3-large w3-text-blue"></i>Security</p>
+                    <p><i class="fa fa-linux w3-margin-right w3-large w3-text-blue"></i>Linux &amp; Networking</p>
+                    <p><i class="fa fa-code w3-margin-right w3-large w3-text-blue"></i>Functional Programming</p>
+                    <br />
+                    <p class="phint" style="display: none;">
+                        <a href="https://filedesless.dev">View online</a>
+                    </p>
+                </div>
+            </div>
 
-      <div class="w3-white w3-text-grey w3-card">
-        <div class="w3-center">
-            <img src="avatar.jpg" style="padding: 2em; width: 80%" alt="Avatar">
-            <h2>Félix Larose-Gervais</h2>
+            <!-- Right side, work exp -->
+            <p style="page-break-before: always"></p>
+            <div class="w3-container w3-cell w3-white w3-mobile">
+                <h2 class="w3-text-grey w3-padding-16">
+                    <i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-blue"></i>
+                    <span>Work Experience</span>
+                </h2>
+                <div class="w3-container">
+                    <h5 class="w3-opacity"><b>Code Reverser / Google</b></h5>
+                    <h6 class="w3-text-blue"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2019 - Current</h6>
+                    <p>Security, reverse engineering, malware analysis.</p>
+                    <hr>
+                </div>
+                <div class="w3-container">
+                    <h5 class="w3-opacity"><b>Computer Science Internship / Université Laval</b></h5>
+                    <h6 class="w3-text-blue"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2018 - 2019</h6>
+                    <p>Management of Linux servers, infrastructure as code, and OpenShift clusters.</p>
+                    <hr>
+                </div>
+                <div class="w3-container">
+                    <h5 class="w3-opacity"><b>Network Administrator / Microage</b></h5>
+                    <h6 class="w3-text-blue"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2016 - 2017</h6>
+                    <p>Management of Windows™ servers and computers, reparation and tech support.</p>
+                    <hr>
+                </div>
+                <div class="w3-container">
+                    <h5 class="w3-opacity"><b>IT Internships / Technosub, Télébec</b></h5>
+                    <h6 class="w3-text-blue"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2014 - 2015</h6>
+                    <p>Mostly tech support. Intranet site development with HTML/CSS/JS and Classic ASP. User management
+                        withing Active Directory</p>
+                    <br />
+                </div>
+            </div>
+
         </div>
-        <div class="w3-container">
-          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-blue"></i>Dev</p>
-          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-blue"></i>Québec</p>
-          <p><i class="fa fa-envelope fa-fw w3-large w3-margin-right w3-text-blue"></i><span class="w3-small">filedesless@gmail.com</span></p>
-          <hr>
-        </div>
-        <div class="w3-container">
-          <p>Skills/Interests</p>
-          <ul class="w3-ul">
-            <li>Security</li>
-            <li>Linux &amp; Networking</li>
-            <li>Functional Programming</li>
-          </ul>
-        </div>
-      </div><br>
 
-    <!-- End Left Column -->
+        <!-- second row, education and trivia -->
+        <div class="w3-margin-top w3-cell-row w3-card pfull">
+
+
+            <!-- Left side, Trivia -->
+            <p style="page-break-before: always"></p>
+            <div class="w3-container w3-cell w3-white w3-mobile">
+                <h2 class="w3-text-grey w3-padding-16">
+                    <i class="fa fa-code fa-fw w3-margin-right w3-xxlarge w3-text-blue"></i>
+                    <span>Trivia</span>
+                </h2>
+                <ul class="w3-ul">
+                    <li>First place at the iHack CTF 2019</li>
+                    <li>First place in all my competitions during the CSGames 2019</li>
+                    <ul>
+                        <li>National Bank's Application Security contest</li>
+                        <li>Communications Security Establishment's Security contest</li>
+                        <li>Reverse Engineering contest</li>
+                    </ul>
+                    <li>First place at both the Decade Edition of the Hackfest CTF and the OWASP's Mini-CTF in 2018</li>
+                    <li>Administrator of <a target="_blank" href="https://hightechlowlife.info">HighTechLowLife</a></li>
+                    <li>CTF player at <a target="_blank" href="https://m.com/profile/13886/aiglebleu">RingZer0Team</a>
+                    </li>
+                    <li>I made a game in Haxe once - <a target="_blank"
+                            href="https://github.com/filedesless/fuyuko">code is
+                            here</a></li>
+                    <li>I also made a small OpenStack cluster for school</li>
+                    <li>Ranked myself 6th at the OWASP Mini-CTF during the HackFest 2017</li>
+                    <li>I'm MTCNA (MikroTik Certified Network Associate)</li>
+                    <li>MMORPG player, cyberpunk fan and cryptonerd</li>
+                </ul>
+                <br />
+            </div>
+
+            <!-- Left side, education -->
+            <p style="page-break-before: always"></p>
+            <div class="w3-container w3-cell w3-white w3-mobile">
+                <h2 class="w3-text-grey w3-padding-16">
+                    <i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-blue"></i>
+                    <span>Education</span>
+                </h2>
+                <div class="w3-container">
+                    <h5 class="w3-opacity"><b>Université Laval</b></h5>
+                    <h6 class="w3-text-blue"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2017 - 2019</h6>
+                    <p>Completed a Bachelor's Degree in Computer Science (C++, Java)</p>
+                    <hr>
+                </div>
+                <div class="w3-container">
+                    <h5 class="w3-opacity"><b>CÉGEPAT</b></h5>
+                    <h6 class="w3-text-blue"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2016 - 2017</h6>
+                    <p>Diploma of Collegial Studies in business programming (.NET for desktop and web, PHP, HTML/CSS/JS)
+                    </p>
+                    <hr>
+                </div>
+                <div class="w3-container">
+                    <h5 class="w3-opacity"><b>CÉGEPAT</b></h5>
+                    <h6 class="w3-text-blue"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2013 - 2016</h6>
+                    <p>Diploma of Collegial Studies in network management (Windows and Linux servers, Cisco devices,
+                        SQL, Security, Scripting)</p>
+                    <br />
+                </div>
+            </div>
+
+        </div>
+
     </div>
 
-    <!-- Right Column -->
-    <div class="w3-twothird w3-cell w3-container w3-mobile">
-
-      <div class="w3-container w3-card w3-white w3-margin-bottom">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-blue"></i>Work Experience</h2>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Code Reverser / Google</b></h5>
-          <h6 class="w3-text-blue"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2019 - Current</h6>
-          <p>Security, reverse engineering, malware analysis.</p>
-          <hr>
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Computer Science Internship / Université Laval</b></h5>
-          <h6 class="w3-text-blue"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2018 - 2019</h6>
-          <p>Management of Linux servers, infrastructure as code, and OpenShift clusters.</p>
-          <hr>
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Network Administrator / Microage</b></h5>
-          <h6 class="w3-text-blue"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2016 - 2017</h6>
-          <p>Management of Windows™ servers and computers, reparation and tech support.</p>
-          <hr>
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>IT Internships / Technosub, Télébec</b></h5>
-          <h6 class="w3-text-blue"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2014 - 2015</h6>
-          <p>Mostly tech support. Intranet site development with HTML/CSS/JS and Classic ASP. User management withing Active Directory</p>
-          <hr>
-        </div>
-      </div>
-
-    </div>
-  </div>
-  
-    <!-- Rest -->
-    <div class="w3-content">
-
-      <div class="w3-container w3-card w3-white w3-margin-bottom">
-	<h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-blue"></i>Education</h2>
-	<div class="w3-container">
-	  <h5 class="w3-opacity"><b>Université Laval</b></h5>
-	  <h6 class="w3-text-blue"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2017 - 2019</h6>
-	  <p>Completed a Bachelor's Degree in Computer Science (C++, Java)</p>
-	  <hr>
-	</div>
-	<div class="w3-container">
-	  <h5 class="w3-opacity"><b>CÉGEPAT</b></h5>
-	  <h6 class="w3-text-blue"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2016 - 2017</h6>
-	  <p>Diploma of Collegial Studies in business programming (.NET for desktop and web, PHP, HTML/CSS/JS)</p>
-	  <hr>
-	</div>
-	<div class="w3-container">
-	  <h5 class="w3-opacity"><b>CÉGEPAT</b></h5>
-	  <h6 class="w3-text-blue"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2013 - 2016</h6>
-	  <p>Diploma of Collegial Studies in network management (Windows and Linux servers, Cisco devices, SQL, Security, Scripting)</p>
-    <hr>
-	</div>
-      </div>
-
-      <p class="page-break-after">&nbsp;</p>
-      <p class="page-break-before">&nbsp;</p>
-
-      <div class="w3-container w3-card w3-white">
-	<h2 class="w3-text-grey w3-padding-16"><i class="fa fa-code fa-fw w3-margin-right w3-xxlarge w3-text-blue"></i>Trivia</h2>
-	<ul class="w3-ul">
-	  <li>First place at the iHack CTF 2019</li>
-	  <li>First place in all my competitions during the CSGames 2019</li>
-	  <ul>
-	    <li>National Bank's Application Security contest</li>
-	    <li>Communications Security Establishment's Security contest</li>
-	    <li>Reverse Engineering contest</li>
-	  </ul>
-	  <li>First place at both the Decade Edition of the Hackfest CTF and the OWASP's Mini-CTF in 2018</li>
-	  <li>Administrator of <a target="_blank" href="https://hightechlowlife.info">HighTechLowLife</a></li>
-	  <li>CTF player at <a target="_blank" href="https://m.com/profile/13886/aiglebleu">RingZer0Team</a></li>
-	  <li>I made a game in Haxe once - <a target="_blank" href="https://github.com/filedesless/fuyuko">code is here</a></li>
-	  <li>I also made a small OpenStack cluster for school</li>
-	  <li>Ranked myself 6th at the OWASP Mini-CTF during the HackFest 2017</li>
-	  <li>I'm MTCNA (MikroTik Certified Network Associate)</li>
-	  <li>MMORPG player, cyberpunk fan and cryptonerd</li>
-	</ul>
-	<br />
-      </div>
-
-    <!-- End Right Column -->
-    </div>
-
-  <!-- End Grid -->
-  </div>
-
-  <!-- End Page Container -->
-</div>
-
-<footer class="w3-container w3-blue w3-center w3-margin-top w3-padding">
-  <p>Find me online.</p>
-  <a target="_blank" href="https://github.com/filedesless"><i class="fa fa-github w3-hover-opacity"></i></a>
-  <a target="_blank" href="https://www.facebook.com/felix.larosegervais"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
-  <a target="_blank" href="https://www.linkedin.com/in/félix-larose-gervais-a6a187144/"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
-  <a target="_blank" href="mailto:filedesless@gmail.com"><i class="fa fa-envelope w3-hover-opacity"></i></a>
-</footer>
+    <footer class="w3-container w3-blue w3-center w3-margin-top w3-padding">
+        <p>Find me online.</p>
+        <a target="_blank" href="https://github.com/filedesless"><i class="fa fa-github w3-hover-opacity"></i></a>
+        <a target="_blank" href="https://www.facebook.com/felix.larosegervais"><i
+                class="fa fa-facebook-official w3-hover-opacity"></i></a>
+        <a target="_blank" href="https://www.linkedin.com/in/félix-larose-gervais-a6a187144/"><i
+                class="fa fa-linkedin w3-hover-opacity"></i></a>
+        <a target="_blank" href="mailto:filedesless@gmail.com"><i class="fa fa-envelope w3-hover-opacity"></i></a>
+    </footer>
 
 </body>
+
 </html>
