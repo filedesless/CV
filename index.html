@@ -15,6 +15,16 @@
                     background-color: #fff;
                     font-size: 80%;
                 }
+                #toggle-light-mode {
+                    display: none;
+                }
+            }
+
+            #toggle-light-mode {
+                position: absolute;
+                right: 0;
+                top: 0;
+                padding: 16px;
             }
         </style>
     </head>
@@ -28,24 +38,29 @@
             </div>
             <div class="w3-col l6 m4 s12">
                 <h1>Security Researcher</h1>
-                <h3>Montréal, Québec, Canada</h3>
+                <h3>Montréal</h3>
             </div>
+            <span id="toggle-light-mode" class="w3-button w3-circle w3-margin">
+                <i id="toggle-light-mode-icon" class="fa fa-moon-o fa-2x"></i>
+            </span>
         </div>
 
         <!-- First row: Work and School -->
         <div class="w3-row">
             <div class="w3-container w3-half">
-                <h2 class="w3-text-grey w3-padding-16">
+                <h2 class="w3-padding-16">
                     <i
-                        class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-theme"
+                        class="w3-text-theme fa fa-suitcase fa-fw w3-margin-right w3-xxlarge"
                     ></i>
                     <span>Work History</span>
                 </h2>
                 <div class="w3-container">
                     <h5 class="w3-opacity"><b>Code Reverser @Google</b></h5>
-                    <h6 class="w3-text-theme">
-                        <i class="fa fa-calendar fa-fw w3-margin-right"></i>2019
-                        - 2021
+                    <h6 class="">
+                        <i
+                            class="w3-text-theme fa fa-calendar fa-fw w3-margin-right"
+                        ></i
+                        >2019 - 2021
                     </h6>
                     <p>Security, reverse engineering, malware analysis</p>
                     <hr />
@@ -54,9 +69,11 @@
                     <h5 class="w3-opacity">
                         <b>Computer Science Internship @ULaval</b>
                     </h5>
-                    <h6 class="w3-text-theme">
-                        <i class="fa fa-calendar fa-fw w3-margin-right"></i>2018
-                        - 2019
+                    <h6 class="">
+                        <i
+                            class="w3-text-theme fa fa-calendar fa-fw w3-margin-right"
+                        ></i
+                        >2018 - 2019
                     </h6>
                     <p>
                         Management of Linux servers, infrastructure as code, and
@@ -68,9 +85,11 @@
                     <h5 class="w3-opacity">
                         <b>Network Administrator @Microage</b>
                     </h5>
-                    <h6 class="w3-text-theme">
-                        <i class="fa fa-calendar fa-fw w3-margin-right"></i>2016
-                        - 2017
+                    <h6 class="">
+                        <i
+                            class="w3-text-theme fa fa-calendar fa-fw w3-margin-right"
+                        ></i
+                        >2016 - 2017
                     </h6>
                     <p>
                         Management of Windows™ servers and computers,
@@ -82,9 +101,11 @@
                     <h5 class="w3-opacity">
                         <b>IT Internships @{Technosub, Télébec}</b>
                     </h5>
-                    <h6 class="w3-text-theme">
-                        <i class="fa fa-calendar fa-fw w3-margin-right"></i>2014
-                        - 2015
+                    <h6 class="">
+                        <i
+                            class="w3-text-theme fa fa-calendar fa-fw w3-margin-right"
+                        ></i
+                        >2014 - 2015
                     </h6>
                     <p>
                         Tech support, intranet site development, user management
@@ -95,30 +116,46 @@
             </div>
 
             <div class="w3-container w3-half">
-                <h2 class="w3-text-grey w3-padding-16">
+                <h2 class="w3-padding-16">
                     <i
-                        class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-theme"
+                        class="w3-text-theme fa fa-certificate fa-fw w3-margin-right w3-xxlarge"
                     ></i>
                     <span>Education</span>
                 </h2>
                 <div class="w3-container">
-                    <h5 class="w3-opacity"><b>UQAM</b></h5>
-                    <h6 class="w3-text-theme">
-                        <i class="fa fa-calendar fa-fw w3-margin-right"></i>2022
-                        - Present
+                    <h5 class="w3-opacity">
+                        <b>Université du Québec à Montréal</b>
+                    </h5>
+                    <h6 class="">
+                        <i
+                            class="w3-text-theme fa fa-calendar fa-fw w3-margin-right"
+                        ></i
+                        >2023 - Present
                     </h6>
                     <p>
-                        Started a Math Major, shifted to a Computer Science
-                        Master's Degree; Privacy, Cryptography, Homomorphic
+                        CS Master's Degree; Privacy, Cryptography, Homomorphic
                         Encryption
+                    </p>
+                    <hr />
+                    <h6 class="">
+                        <i
+                            class="w3-text-theme fa fa-calendar fa-fw w3-margin-right"
+                        ></i
+                        >2022 - 2023
+                    </h6>
+                    <p>
+                        Undergraduate courses in Mathematics; Analysis, Linear
+                        Algebra, Group Theory
                     </p>
                     <hr />
                 </div>
                 <div class="w3-container">
-                    <h5 class="w3-opacity"><b>ULaval</b></h5>
-                    <h6 class="w3-text-theme">
-                        <i class="fa fa-calendar fa-fw w3-margin-right"></i>2017
-                        - 2019
+                    <h5 class="w3-opacity"><b>Université Laval</b></h5>
+                    <h6 class="">
+                        <i
+                            class="w3-text-theme fa fa-calendar fa-fw w3-margin-right"
+                        ></i
+                        >2017 - 2019
                     </h6>
                     <p>
                         Bachelor's Degree in Computer Science; Algorithms, Data
@@ -128,26 +165,16 @@
                 </div>
                 <div class="w3-container">
                     <h5 class="w3-opacity"><b>CÉGEPAT</b></h5>
-                    <h6 class="w3-text-theme">
-                        <i class="fa fa-calendar fa-fw w3-margin-right"></i>2016
-                        - 2017
+                    <h6 class="">
+                        <i
+                            class="w3-text-theme fa fa-calendar fa-fw w3-margin-right"
+                        ></i
+                        >2013 - 2017
                     </h6>
                     <p>
-                        Diploma of Collegial Studies in programming for
-                        businesses; Windows and Web development
-                    </p>
-                    <hr />
-                </div>
-                <div class="w3-container">
-                    <h5 class="w3-opacity"><b>CÉGEPAT</b></h5>
-                    <h6 class="w3-text-theme">
-                        <i class="fa fa-calendar fa-fw w3-margin-right"></i>2013
-                        - 2016
-                    </h6>
-                    <p>
-                        Diploma of Collegial Studies in network management;
-                        Windows and Linux servers, Databases, Security,
-                        Scripting
+                        Double Diploma of College Studies in programming and
+                        network management; Web development, Windows and Linux
+                        servers, Databases, Security, Scripting
                     </p>
                     <br />
                 </div>
@@ -157,9 +184,9 @@
         <!-- Second row: comp and trivia -->
         <div class="w3-row">
             <div class="w3-container w3-half">
-                <h2 class="w3-text-grey w3-padding-16">
+                <h2 class="w3-padding-16">
                     <i
-                        class="fa fa-trophy fa-fw w3-margin-right w3-xxlarge w3-text-theme"
+                        class="w3-text-theme fa fa-trophy fa-fw w3-margin-right w3-xxlarge"
                     ></i>
                     <span>Competitions</span>
                 </h2>
@@ -189,56 +216,45 @@
             </div>
 
             <div class="w3-container w3-half">
-                <h2 class="w3-text-grey w3-padding-16">
+                <h2 class="w3-padding-16">
                     <i
-                        class="fa fa-book fa-fw w3-margin-right w3-xxlarge w3-text-theme"
+                        class="w3-text-theme fa fa-book fa-fw w3-margin-right w3-xxlarge"
                     ></i>
                     <span>Research</span>
                 </h2>
                 <ul class="w3-ul">
                     <li>
-                        S Azogagh, MO Killijian and F Larose-Gervais.
-                        <a href="https://eprint.iacr.org/2024/1894"
-                            >A non-comparison oblivious sort and its application
-                            to private k-NN</a
-                        >. Proceedings on Privacy Enhancing Technologies
-                        (PoPETs) 2025
+                        <h5>
+                            <a href="https://eprint.iacr.org/2024/1894"
+                                >A non-comparison oblivious sort and its
+                                application to private k-NN</a
+                            >
+                        </h5>
+                        <ul class="w3-ul">
+                            <li>
+                                S Azogagh, MO Killijian and F Larose-Gervais
+                            </li>
+                            <li>
+                                Proceedings on Privacy Enhancing Technologies
+                                (PoPETs) 2025
+                            </li>
+                        </ul>
                     </li>
                     <li>
-                        S Azogagh, ZA Birba, MO Killijian and F Larose-Gervais.
-                        <a href="https://eprint.iacr.org/2024/1935"
-                            >RevoLUT : Rust Efficient Versatile Oblivious
-                            Look-Up-Tables</a
-                        >. Poster for FHE.org 2025
+                        <h5>
+                            <a href="https://eprint.iacr.org/2024/1935"
+                                >RevoLUT : Rust Efficient Versatile Oblivious
+                                Look-Up-Tables</a
+                            >
+                        </h5>
+                        <ul class="w3-ul">
+                            <li>
+                                S Azogagh, ZA Birba, MO Killijian and F
+                                Larose-Gervais.
+                            </li>
+                            <li>Poster for FHE.org 2025</li>
+                        </ul>
                     </li>
-                </ul>
-            </div>
-
-            <div class="w3-container w3-half">
-                <h2 class="w3-text-grey w3-padding-16">
-                    <i
-                        class="fa fa-code fa-fw w3-margin-right w3-xxlarge w3-text-theme"
-                    ></i>
-                    <span>Trivia</span>
-                </h2>
-                <ul class="w3-ul">
-                    <li>
-                        CTF player at
-                        <a target="_blank" href="https://ringzer0ctf.com"
-                            >RingZer0Team</a
-                        >
-                    </li>
-                    <li>
-                        My code projects are on
-                        <a target="_blank" href="https://github.com/filedesless"
-                            >GitHub</a
-                        >, featuring notably the following Rust ones
-                    </li>
-                    <ul>
-                        <li>TED, a vim-like Text EDitor</li>
-                        <li>TetanOS, an minimal kernel</li>
-                        <li>RoadRunner-Craft, a minecraft-like game</li>
-                    </ul>
                 </ul>
             </div>
         </div>
@@ -260,4 +276,21 @@
             ></a>
         </footer>
     </body>
+    <script>
+        const toggleLightMode = () => {
+            const body = document.querySelector("body");
+            body.classList.toggle("w3-theme-light");
+            body.classList.toggle("w3-theme-dark");
+            document
+                .getElementById("toggle-light-mode-icon")
+                .classList.toggle("fa-sun-o");
+            document
+                .getElementById("toggle-light-mode-icon")
+                .classList.toggle("fa-moon-o");
+        };
+
+        document
+            .getElementById("toggle-light-mode")
+            .addEventListener("click", toggleLightMode);
+    </script>
 </html>
